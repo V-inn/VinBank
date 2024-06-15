@@ -1,7 +1,5 @@
 package com.viniciusfk.client.services;
 
-import java.util.Arrays;
-
 public class Validate {
     private boolean result = false;
     private String message = "";
@@ -19,6 +17,11 @@ public class Validate {
 
         if(cpf.length() != 11){
             this.message = "CPF deve conter 11 digitos.";
+            return;
+        }
+
+        if(cpf.matches("([1234567890])\\1{10}")){
+            this.message = "CPF inválido.";
             return;
         }
 
@@ -48,33 +51,23 @@ public class Validate {
         for (int i = 0; i < cpf.length()-2; i++) {
             sum += Integer.parseInt(digits[i]) * currentMultiplier;
 
-            System.out.println(sum);
-
             currentMultiplier--;
         }
 
         firstDigit = ((sum%11) <= 1) ? 0 : 11-(sum%11);
-
-        System.out.println("----------------------------------");
-        System.out.println(firstDigit);
-        System.out.println("----------------------------------");
 
         //Checks if first verifier digit is equal as to inputted
         if (firstDigit != Integer.parseInt(digits[9])){
             return false;
         }
 
-        for (int i = 0; i < digits.length-1; i++) {
+        for (int i = 0; i < digits.length-2; i++) {
             sum += Integer.parseInt(digits[i]);
-            System.out.println(sum);
         }
 
+        sum+= Integer.parseInt(digits[9])*2;
+
         secondDigit = ((sum%11) <= 1) ? 0 : 11-(sum%11);
-
-        System.out.println("----------------------------------");
-        System.out.println(secondDigit);
-        System.out.println("----------------------------------");
-
 
         //Checks if second verifier digit is equal as to inputted and if it is return valid CPF
         return secondDigit == Integer.parseInt(digits[10]);
