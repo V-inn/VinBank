@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bankApi/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/VinBankApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/test/java/com/viniciusfk/bankApi/VinBankApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/services/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/user/UserObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bankClient" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2htk5tj1QEnnf9zzKOCEM7DUo2L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="" />
+      <created>1718420583205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718420583205</updated>
+    </task>
+    <servers />
+  </component>
+</project>
