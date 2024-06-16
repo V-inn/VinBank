@@ -4,11 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="" />
+    <list default="true" id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bankApi/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/PersistenceUserConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/userDto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/VinBankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/VinBankApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/ClientController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/client-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/services/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/services/Validate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/target/test-classes/BasicTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/test-classes/BasicTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,19 +53,102 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2htk5tj1QEnnf9zzKOCEM7DUo2L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.VinBankApplication.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "JUnit.ValidateTests.executor": "Run",
+    "JUnit.ValidateTests.test1.executor": "Run",
+    "JUnit.ValidateTests.test2.executor": "Run",
+    "JUnit.ValidateTests.test6.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Bank Application/bankApi/src/main/java/com/viniciusfk/bankApi",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Bank Application\bankApi\src\main\java\com\viniciusfk\bankApi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Bank Application\bankApi" />
+      <recent name="D:\Bank Application" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.viniciusfk.client.HelloApplication" />
+      <module name="client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateTests" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateTests.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateTests" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ValidateTests" />
+      <item itemvalue="JUnit.ValidateTests.test1" />
+      <item itemvalue="JUnit.ValidateTests.test2" />
+      <item itemvalue="JUnit.ValidateTests.test6" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ValidateTests" />
+        <item itemvalue="JUnit.ValidateTests.test6" />
+        <item itemvalue="JUnit.ValidateTests.test2" />
+        <item itemvalue="JUnit.ValidateTests.test1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,5 +159,10 @@
       <updated>1718420583205</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/bankClient" />
+    </ignored-roots>
   </component>
 </project>

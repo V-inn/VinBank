@@ -5,24 +5,31 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viniciusfk.client.ClientController">
-   <Pane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <Text layoutX="282.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <TextField fx:id="cpfField" layoutX="215.0" layoutY="163.0" prefHeight="26.0" prefWidth="170.0" promptText="CPF" />
-      <PasswordField fx:id="passwordField" layoutX="215.0" layoutY="220.0" prefHeight="26.0" prefWidth="170.0" promptText="Senha" />
-      <Button layoutX="215.0" layoutY="288.0" mnemonicParsing="false" onAction="#goToSignUp" prefHeight="35.0" prefWidth="74.0" text="Cadastrar" textOverrun="CLIP" wrapText="true" />
-      <Button layoutX="311.0" layoutY="288.0" mnemonicParsing="false" onAction="#signIn" prefHeight="35.0" prefWidth="74.0" text="Entrar" />
-      <Label fx:id="cpfInfo" layoutX="215.0" layoutY="191.0" prefHeight="18.0" prefWidth="170.0" />
-      <Label fx:id="passwordInfo" layoutX="215.0" layoutY="246.0" prefHeight="18.0" prefWidth="170.0" />
-   </Pane>
-   <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-   <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-</AnchorPane>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viniciusfk.client.LoginController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <Pane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" AnchorPane.bottomAnchor="283" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="282" AnchorPane.topAnchor="96">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="cpfField" promptText="CPF" AnchorPane.bottomAnchor="230" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="140.0" />
+               <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="179.0" promptText="Senha" AnchorPane.bottomAnchor="164" AnchorPane.leftAnchor="211" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="207.0" />
+               <Button mnemonicParsing="false" onAction="#goToSignUp" prefHeight="30.0" prefWidth="77.0" text="Cadastrar" textOverrun="CLIP" wrapText="true" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="273.0" />
+               <Button mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="76.0" text="Entrar" AnchorPane.bottomAnchor="98" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="273.0" />
+               <Label fx:id="cpfInfo" prefHeight="30.0" prefWidth="177.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="170.0" />
+               <Label fx:id="passwordInfo" prefHeight="30.0" prefWidth="177.0" AnchorPane.bottomAnchor="134" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="236.0" />
+            </AnchorPane>
+         </Pane>
+         <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </AnchorPane>
+   </center>
+</BorderPane>

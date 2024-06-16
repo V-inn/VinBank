@@ -7,6 +7,7 @@ module com.viniciusfk.client {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires java.net.http;
 
     opens com.viniciusfk.client to javafx.fxml;
     exports com.viniciusfk.client;
