@@ -5,34 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bankApi/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/PersistenceUserConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/userDto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/services/CookieHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/VinBankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/VinBankApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/ClientController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/client-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/services/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/services/Validate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/test-classes/BasicTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/test-classes/BasicTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/userDto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/userDto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,29 +38,32 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2htk5tj1QEnnf9zzKOCEM7DUo2L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.VinBankApplication.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "JUnit.ValidateTests.executor": "Run",
-    "JUnit.ValidateTests.test1.executor": "Run",
-    "JUnit.ValidateTests.test2.executor": "Run",
-    "JUnit.ValidateTests.test6.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Bank Application/bankApi/src/main/java/com/viniciusfk/bankApi",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VinBankApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateTests.test1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateTests.test2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateTests.test6.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Bank Application/bankApi/src/main/java/com/viniciusfk/bankApi&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Bank Application\bankApi\src\main\java\com\viniciusfk\bankApi" />
@@ -85,7 +73,7 @@
       <recent name="D:\Bank Application" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.viniciusfk.client.HelloApplication" />
       <module name="client" />
@@ -161,6 +149,7 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/bankClient" />
     </ignored-roots>

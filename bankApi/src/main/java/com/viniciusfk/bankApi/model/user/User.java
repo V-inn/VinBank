@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.NumberFormat;
 
 @Getter
 @Setter
@@ -32,4 +33,8 @@ public class User {
     @NotBlank(message = "Phone number is required.")
     @Column(name = "phone", length = 15, nullable = false, unique = true)
     private String phone;
+
+    @NumberFormat
+    @Column(name = "balance")
+    private double balance;
 }

@@ -24,7 +24,7 @@ public class SecurityFilter extends OncePerRequestFilter {
                 if (cookie.getName().equals("token")) {
                     String token = cookie.getValue();
 
-                    Authentication auth = TokenUtil.validate(token);
+                    Authentication auth = TokenUtil.validateAuthentication(token);
                     SecurityContextHolder.getContext().setAuthentication(auth);
                 }
             }
