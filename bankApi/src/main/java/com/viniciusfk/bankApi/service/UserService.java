@@ -1,5 +1,6 @@
 package com.viniciusfk.bankApi.service;
 
+import com.viniciusfk.bankApi.model.Transaction;
 import com.viniciusfk.bankApi.model.user.User;
 import com.viniciusfk.bankApi.repository.user.IUser;
 import com.viniciusfk.bankApi.security.Token;
@@ -8,9 +9,6 @@ import com.viniciusfk.bankApi.userDto.UserDto;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService {
@@ -43,5 +41,29 @@ public class UserService {
             }
         }
         return null;
+    }
+
+    public double getOwnBalance(String requester){
+        User origin = repository.findByNameOrCpf(requester, "");
+        return origin.getBalance();
+    }
+
+    public Transaction attemptTransaction(String requester, UserDto receiver, double ammount){
+        User origin = repository.findByName(requester);
+        User destinatary;
+        try {
+            destinatary = repository.findByNameOrCpf(receiver.getName(), receiver.getCpf());
+        }catch (NullPointerException e){
+            return new Transaction(false, "Invalid destinatary");
+        }
+
+        if(getOwnBalance(requester) < ammount){
+            return new Transaction(false, "Insuficient balance.");
+        }
+
+        origin.setBalance(origin.getBalance()-ammount);
+        destinatary.setBalance(destinatary.getBalance()+ammount);
+        return new Transaction(true, "Transaction successful");
+
     }
 }

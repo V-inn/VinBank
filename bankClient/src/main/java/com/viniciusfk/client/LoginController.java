@@ -1,5 +1,6 @@
 package com.viniciusfk.client;
 
+import com.viniciusfk.client.httpHandler.Handler;
 import com.viniciusfk.client.services.Validate;
 
 import java.io.IOException;
@@ -10,15 +11,15 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.Optional;
 
 
 public class LoginController {
+    private static final String apiUrl = System.getenv("BANK_API_URL");
+
     @FXML
     private Pane loginPane;
 
@@ -45,7 +46,7 @@ public class LoginController {
         validate.validateCPF(cpfField.getText());
 
         if(validate.isValid()){
-            if(sendLoginRequest()){
+            if(testRequest()){
                 loginPane.visibleProperty().set(true);
             }
         }else{
@@ -53,25 +54,28 @@ public class LoginController {
         }
     }
 
-    private boolean sendLoginRequest() throws IOException, InterruptedException {
-        String responseBody = sendGetRequest("http://localhost:8080/users/hello");
-        System.out.println(responseBody);
-        cpfInfo.setText(responseBody);
-
-        return true;
-    }
-
-    public static String sendGetRequest(String url) throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newHttpClient();
+    private boolean testRequest() throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
+                .uri(URI.create(apiUrl + "/users/hello"))
                 .GET()
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-        return response.body();
+
+        System.out.println(response.body());
+        cpfInfo.setText(response.body());
+
+        return true;
     }
 
+    private boolean login(){
+        HttpClient client = HttpClient.newBuilder().build();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(apiUrl + "/users/login"))
+                .POST(HttpRequest.BodyPublishers.noBody())
+                .build();
+    }
 }
 
