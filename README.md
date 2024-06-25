@@ -1,23 +1,23 @@
 # VinBank
 Fictional Bank Application written in JAVA
 
-### IMPORTANT: THE API DOES NOT MAKE USE OF **CORS** AS ALL REQUESTS ARE EXPECTED FROM A NON-BROWSER CLIENT.
+**IMPORTANT: THE API DOES NOT MAKE USE OF CORS AS ALL REQUESTS ARE EXPECTED FROM A NON-BROWSER CLIENT.**
 
 ## Current API functionalities include:
 - JWT Token authentication by cookie;
 - [Account creation;](#creating-an-account)
-- Account authentication;
-- Money deposit;
-- Money withdrawal;
-- Money transfer between existing bank accounts;
-- Balance check;
+- [Account authentication](#authenticating);
+- [Money deposit](#deposit);
+- [Money withdrawal](#withdraw);
+- [Money transfer between existing bank accounts](#transaction);
+- [Balance check](#check-balance);
 
 To use the API, most endpoints will be protected by authentication and login is required.
 Attempt to access protected endpoints while not authenticated will always result in a **403 Http Status**
 
 **The open endpoints include:**
 - /users for POST requests;
-- /users/login;
+- [/users/login](#authenticating);
 - [/users/hello](#testing-connection);
 
 *See uses below.*
