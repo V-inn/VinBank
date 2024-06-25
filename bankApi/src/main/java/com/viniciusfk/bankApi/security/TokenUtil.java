@@ -1,6 +1,6 @@
 package com.viniciusfk.bankApi.security;
 
-import com.viniciusfk.bankApi.model.user.User;
+import com.viniciusfk.bankApi.model.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -67,9 +67,6 @@ public class TokenUtil {
 
     public static String getSubject(String token){
         Jws<Claims> jwsClaims = decrypt(token);
-        System.out.println(jwsClaims.getBody().getSubject());
-        String subject = jwsClaims.getBody().getSubject();
-        System.out.println(subject);
-        return subject;
+        return jwsClaims.getBody().getSubject();
     }
 }

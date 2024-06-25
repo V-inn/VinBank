@@ -11,5 +11,5 @@ module com.viniciusfk.client {
 
     opens com.viniciusfk.client to javafx.fxml;
     exports com.viniciusfk.client;
-    exports com.viniciusfk.client.services;
+    exports com.viniciusfk.client.utility;
 }

@@ -32,7 +32,7 @@ public class PersistenceUserConfiguration {
     public LocalContainerEntityManagerFactoryBean userEntityManager() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(userDataSource());
-        em.setPackagesToScan("com.viniciusfk.bankApi.model.user");
+        em.setPackagesToScan("com.viniciusfk.bankApi.model");
 
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

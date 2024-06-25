@@ -1,11 +1,9 @@
 package com.viniciusfk.bankApi.controller;
 
-import com.viniciusfk.bankApi.model.Transaction;
-import com.viniciusfk.bankApi.model.user.User;
+import com.viniciusfk.bankApi.model.User;
 import com.viniciusfk.bankApi.security.Token;
-import com.viniciusfk.bankApi.security.TokenUtil;
 import com.viniciusfk.bankApi.service.UserService;
-import com.viniciusfk.bankApi.userDto.UserDto;
+import com.viniciusfk.bankApi.dto.UserDto;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
@@ -40,6 +38,7 @@ public class UserController {
             System.out.println(token.getToken());
             cookie.setHttpOnly(true);
             cookie.setSecure(true);
+            cookie.setPath("/");
             // Add cookie to response
             response.addCookie(cookie);
             return ResponseEntity.status(200).build();
@@ -56,26 +55,6 @@ public class UserController {
     public  ResponseEntity<?> authenticated(){
         return ResponseEntity.status(200).build();
     }
-
-    //TODO: add DTO with UserDto and ammount
-    @PostMapping("/transaction")
-    public ResponseEntity<?> transaction(@Valid @CookieValue(name = "token") String userCookie, @RequestBody UserDto user, int ammount, HttpServletResponse response){
-        if(TokenUtil.validateToken(userCookie)){
-            String origin = TokenUtil.getSubject(userCookie);
-            Transaction transaction = userService.attemptTransaction(origin, user, ammount);
-            return ResponseEntity.status(200).body(transaction.message());
-        }
-        return ResponseEntity.status(401).build();
-    }
-
-    @GetMapping("/balance")
-    public ResponseEntity<Double> balance(@Valid @CookieValue(name = "token") String userCookie){
-        if(TokenUtil.validateToken(userCookie)){
-            return ResponseEntity.status(200).body(userService.getOwnBalance(TokenUtil.getSubject(userCookie)));
-        }
-        return ResponseEntity.status(401).build();
-    }
-
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)

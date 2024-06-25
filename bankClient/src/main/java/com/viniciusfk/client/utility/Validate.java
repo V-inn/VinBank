@@ -1,4 +1,4 @@
-package com.viniciusfk.client.services;
+package com.viniciusfk.client.utility;
 
 public class Validate {
     private boolean result = false;
