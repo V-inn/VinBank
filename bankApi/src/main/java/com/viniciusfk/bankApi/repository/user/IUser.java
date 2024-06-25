@@ -1,6 +1,6 @@
 package com.viniciusfk.bankApi.repository.user;
 
-import com.viniciusfk.bankApi.model.user.User;
+import com.viniciusfk.bankApi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

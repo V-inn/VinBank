@@ -1,4 +1,4 @@
-package com.viniciusfk.bankApi.model.user;
+package com.viniciusfk.bankApi.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;

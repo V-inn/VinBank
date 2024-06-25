@@ -1,4 +1,4 @@
-package com.viniciusfk.bankApi.userDto;
+package com.viniciusfk.bankApi.dto;
 
 import lombok.Getter;
 import lombok.Setter;

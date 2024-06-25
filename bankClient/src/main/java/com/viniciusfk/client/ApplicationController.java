@@ -1,7 +1,8 @@
 package com.viniciusfk.client;
 
-import com.viniciusfk.client.httpHandler.Handler;
-import com.viniciusfk.client.services.Validate;
+import com.viniciusfk.client.utility.BankHttpClient;
+import com.viniciusfk.client.utility.CookieManagerUtility;
+import com.viniciusfk.client.utility.Validate;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -15,9 +16,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.time.Duration;
+import java.util.List;
+
+import static com.viniciusfk.client.service.LoginService.login;
 
 
-public class LoginController {
+public class ApplicationController {
     private static final String apiUrl = System.getenv("BANK_API_URL");
 
     @FXML
@@ -46,8 +51,10 @@ public class LoginController {
         validate.validateCPF(cpfField.getText());
 
         if(validate.isValid()){
-            if(testRequest()){
-                loginPane.visibleProperty().set(true);
+            if(login(cpfField.getText(), passwordField.getText())){
+                loginPane.visibleProperty().set(false);
+            }else{
+
             }
         }else{
             cpfInfo.setText(validate.getMessage());
@@ -70,12 +77,5 @@ public class LoginController {
         return true;
     }
 
-    private boolean login(){
-        HttpClient client = HttpClient.newBuilder().build();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(apiUrl + "/users/login"))
-                .POST(HttpRequest.BodyPublishers.noBody())
-                .build();
-    }
 }
 
