@@ -57,7 +57,11 @@ public class BankingController {
         if(TokenUtil.validateToken(userCookie)){
             String origin = TokenUtil.getSubject(userCookie);
             ResponseResult responseResult = bankingService.attemptTransaction(origin, transactionParameters);
-            return ResponseEntity.status(200).body(responseResult.message());
+
+            if(responseResult.result()){
+                return ResponseEntity.status(200).body(responseResult.message());
+            }
+            return ResponseEntity.status(400).body(responseResult.message());
         }
         return ResponseEntity.status(401).build();
     }

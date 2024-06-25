@@ -5,34 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0fe1bd-565c-41b4-8ef4-089816adad8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/BankingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/dto/TransactionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/BankingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/dataTransfer/RequestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/utility/BankHttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/utility/CookieManagerUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/PersistenceUserConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/PersistenceUserConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/records/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/repository/user/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/security/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/userDto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/services/CookieHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/services/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/com/viniciusfk/client/utility/Validate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/main/resources/com/viniciusfk/client/client-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/test/java/BasicTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/src/test/java/ValidateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/src/test/java/ValidateTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/com/viniciusfk/client/services/Validate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/bankClient/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/BankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/controller/BankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankApi/src/main/java/com/viniciusfk/bankApi/service/BankingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
