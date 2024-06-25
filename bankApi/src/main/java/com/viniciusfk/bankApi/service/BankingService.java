@@ -48,6 +48,10 @@ public class BankingService {
     public ResponseResult attemptTransaction(String requester, TransactionDto transactionParameters){
         User origin = repository.findByName(requester);
         User destinatary;
+        if (transactionParameters.getAmmount() <= 0){
+            return new ResponseResult(false, "Invalid ammount");
+        }
+
         try {
             destinatary = repository.findByNameOrCpf(transactionParameters.getName(), transactionParameters.getCpf());
         }catch (NullPointerException e){
