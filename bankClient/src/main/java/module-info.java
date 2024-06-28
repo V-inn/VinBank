@@ -8,6 +8,7 @@ module com.viniciusfk.client {
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
     requires java.net.http;
+    requires jdk.management.agent;
 
     opens com.viniciusfk.client to javafx.fxml;
     exports com.viniciusfk.client;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viniciusfk.client.ApplicationController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <Pane fx:id="loginPane" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" AnchorPane.bottomAnchor="283" AnchorPane.leftAnchor="281.0" AnchorPane.rightAnchor="282" AnchorPane.topAnchor="96">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="cpfField" promptText="CPF" AnchorPane.bottomAnchor="230" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="140.0" />
+               <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="179.0" promptText="Senha" AnchorPane.bottomAnchor="164" AnchorPane.leftAnchor="211" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="207.0" />
+               <Button mnemonicParsing="false" onAction="#goToSignUp" prefHeight="30.0" prefWidth="77.0" text="Cadastrar" textOverrun="CLIP" wrapText="true" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="273.0" />
+               <Button mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="76.0" text="Entrar" AnchorPane.bottomAnchor="98" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="273.0" />
+               <Label fx:id="cpfInfo" prefHeight="30.0" prefWidth="177.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="170.0" />
+               <Label fx:id="passwordInfo" prefHeight="30.0" prefWidth="177.0" AnchorPane.bottomAnchor="134" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="236.0" />
+            </AnchorPane>
+         </Pane>
+         <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         <Pane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         <Label contentDisplay="CENTER" layoutX="109.0" layoutY="45.0" prefHeight="41.0" prefWidth="382.0" text="Bem vindo" textAlignment="CENTER" />
+         <Button layoutX="227.0" layoutY="119.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="146.0" text="DEPOSITAR" />
+         <Button layoutX="227.0" layoutY="183.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="146.0" text="SACAR" />
+         <Button layoutX="227.0" layoutY="248.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="146.0" text="TRANSFERIR" />
+         <Button layoutX="227.0" layoutY="313.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="146.0" text="SALDO" />
+      </AnchorPane>
+   </center>
+</BorderPane>

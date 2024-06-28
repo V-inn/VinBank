@@ -1,5 +1,6 @@
 package com.viniciusfk.client.service;
 
+import com.viniciusfk.client.dataTransfer.RequestResult;
 import com.viniciusfk.client.utility.BankHttpClient;
 import com.viniciusfk.client.utility.CookieManagerUtility;
 
@@ -12,7 +13,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class LoginService {
-    public static boolean login(String cpf, String password) throws IOException, InterruptedException {
+    public static RequestResult login(String cpf, String password) throws IOException, InterruptedException {
         String parsed = "{\"cpf\": \"" + cpf + "\", \"password\": \"" + password + "\"}";
 
         HttpClient client = BankHttpClient.getSharedClient();
@@ -23,14 +24,22 @@ public class LoginService {
                 .POST(HttpRequest.BodyPublishers.ofString(parsed))
                 .build();
 
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> response;
+
+        try{
+            response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        }catch (IOException e){
+            return  new RequestResult(false, "Erro de conexão com o servidor.");
+        }catch (InterruptedException e){
+            return  new RequestResult(false, "A solicitação foi interrompida.");
+        }
 
         if(response.statusCode() == 200){
             List<String> cookies = response.headers().map().get("Set-Cookie");
             CookieManagerUtility.addCookies(cookies);
             System.out.println(CookieManagerUtility.getCookies());
-            return true;
+            return new RequestResult(true, response.body());
         }
-        return false;
+        return new RequestResult(false, response.body());
     }
 }
