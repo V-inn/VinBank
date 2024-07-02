@@ -1,4 +1,9 @@
-D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\HelloApplication.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\ApplicationController.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\service\LoginService.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\utility\Validate.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\utility\BankHttpClient.java
 D:\Bank Application\bankClient\src\main\java\module-info.java
-D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\ClientController.java
-D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\HelloController.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\Application.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\user\UserObject.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\dataTransfer\RequestResult.java
+D:\Bank Application\bankClient\src\main\java\com\viniciusfk\client\utility\CookieManagerUtility.java

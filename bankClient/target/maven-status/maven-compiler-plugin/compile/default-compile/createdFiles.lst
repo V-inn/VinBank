@@ -1,4 +1,9 @@
-com\viniciusfk\client\HelloApplication.class
-com\viniciusfk\client\HelloController.class
+com\viniciusfk\client\ApplicationController.class
+com\viniciusfk\client\service\LoginService.class
+com\viniciusfk\client\Application.class
 module-info.class
-com\viniciusfk\client\ClientController.class
+com\viniciusfk\client\utility\Validate.class
+com\viniciusfk\client\dataTransfer\RequestResult.class
+com\viniciusfk\client\user\UserObject.class
+com\viniciusfk\client\utility\BankHttpClient.class
+com\viniciusfk\client\utility\CookieManagerUtility.class

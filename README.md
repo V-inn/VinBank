@@ -73,7 +73,7 @@ Deposit is done through a **POST** request to the **/bank/deposit** endpoint.
 The parsed parameter is a positive number.
 
 Successful deposit will return a **200 Http Status** along with the message "Deposit succesful" on the response body.
-Parsing a negative number or a non numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
+Parsing a negative number or a non-numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
 
 
 ### Withdraw:
@@ -84,7 +84,7 @@ The parsed parameter is a positive number.
 
 Successful withdraw will return a **200 Http Status** along with the message "Withdraw succesful" on the response body.
 Attempt to withdraw a number greater than *available balance* will result in a **400 Bad Request Http Status** along with the message "Insufficient balance" on the response body.
-Parsing a negative number or a non numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
+Parsing a negative number or a non-numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
 
 ### Transaction:
 This endpoint is used to transfer (decrease requester's balance and increase destinatary's balance the same ammount) an ammount between two different existing accounts on the database.
@@ -101,5 +101,5 @@ double ammount; //Required
 
 Successful transaction will return a **200 OK Http Status** along with the message "Transaction succesful" on the response body.
 Attempt to transfer greater than *available balance* will result in a **400 Bad Request Http Status** along with the message "Insufficient balance" on the response body.
-Parsing a negative number or a non numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
+Parsing a negative number or a non-numerical content will result in a **400 Bad Request Http Status** along with the corresponding error message on the response body.
 Attempt to transfer to a non-existing account will result ib a **400 Bad Request Http Statys** along with the message "Invalid destinatary".
