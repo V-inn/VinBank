@@ -1,47 +1,67 @@
 package com.viniciusfk.client.utility;
 
-public class Validate {
-    private boolean result = false;
-    private String message = "";
+import com.viniciusfk.client.dataTransfer.RequestResult;
 
-    public void validateCPF(String cpf){
+//TODO: Make validation server-side only.
+
+public class Validate {
+    public static RequestResult validateName(String name){
+        return new RequestResult(true, "Nome válido", null, null);
+    }
+
+    public static RequestResult validateCPF(String cpf){
         if(cpf.isBlank()){
-            this.message = "CPF é um campo obrigatório.";
-            return;
+            return new RequestResult(false, "CPF é um campo obrigatório.","cpfError", (byte) 1);
         }
 
         if(!cpf.matches("\\d+")){
-            this.message = "CPF deve conter apenas números.";
-            return;
+            return new RequestResult(false, "CPF deve conter apenas números." ,"cpfError", (byte) 2);
         }
 
         if(cpf.length() != 11){
-            this.message = "CPF deve conter 11 digitos.";
-            return;
+            return new RequestResult(false, "CPF deve conter 11 digitos." , "cpfError", (byte) 3);
         }
 
         if(cpf.matches("([1234567890])\\1{10}")){
-            this.message = "CPF inválido.";
-            return;
+            return new RequestResult(false, "CPF inválido." ,"cpfError", (byte) 4);
         }
 
         if (!isValidCPF(cpf)){
-            this.message = "CPF inválido.";
-            return;
+            return new RequestResult(false, "CPF inválido." , "cpfError", (byte) 4);
         }
 
-        result = true;
+        return new RequestResult(true, "CPF válido", null, null);
     }
 
-    public boolean isValid() {
-        return result;
+    public static RequestResult validatePasswordByDefaultParameters(String password){
+        if (password.matches("[<>'\"(){}:;]")){
+            return new RequestResult(false, "A senha não pode conter os seguintes digitos: <>'\"(){}:;", "badPassword" , (byte) 1);
+        }
+
+        if(password.length() < 8){
+            return new RequestResult(false, "A senha precisa ter no mínimo 8 digitos.", "badPassword", (byte) 2);
+        }
+
+        if(!(password.matches("(.*[a-z].*)") && password.matches("(.*[A-Z].*)"))){
+            return new RequestResult(false, "A senha deve conter no mínimo um caractér maiusculo e um minúsculo", "badPassword", (byte) 3);
+        }
+
+        if(!password.matches(".*[!@#$%&].*")){
+            return new RequestResult(false, "A senha deve conter no mínimo um caractér especial", "badPassword", (byte) 4);
+        }
+
+        if(!password.matches(".*[0-9].*")){
+            return new RequestResult(false, "A senha deve conter no mínimo um número", "badPassword", (byte) 5);
+        }
+
+        return new RequestResult(true, "Senha válida", null, null);
     }
 
-    public String getMessage() {
-        return message;
+    public static RequestResult validatePhoneNumber(String phone){
+        return new RequestResult(true, "Telefone válido", null, null);
     }
 
-    private boolean isValidCPF(String cpf){
+    private static boolean isValidCPF(String cpf){
         String[] digits = cpf.split("");
         int sum = 0;
         int firstDigit;

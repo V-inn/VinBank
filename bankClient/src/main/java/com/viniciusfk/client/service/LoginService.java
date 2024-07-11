@@ -29,17 +29,18 @@ public class LoginService {
         try{
             response = client.send(request, HttpResponse.BodyHandlers.ofString());
         }catch (IOException e){
-            return  new RequestResult(false, "Erro de conexão com o servidor.");
+            return  new RequestResult(false, "Erro de conexão com o servidor.", "connectionError", (byte) 1);
         }catch (InterruptedException e){
-            return  new RequestResult(false, "A solicitação foi interrompida.");
+            return  new RequestResult(false, "A solicitação foi interrompida.", "connectionError", (byte) 2);
         }
 
         if(response.statusCode() == 200){
             List<String> cookies = response.headers().map().get("Set-Cookie");
             CookieManagerUtility.addCookies(cookies);
             System.out.println(CookieManagerUtility.getCookies());
-            return new RequestResult(true, response.body());
+            return new RequestResult(true, response.body(), null, null);
         }
-        return new RequestResult(false, response.body());
+        //TODO: Add more specific error messages.
+        return new RequestResult(false, response.body(), "authenticationError", null);
     }
 }
